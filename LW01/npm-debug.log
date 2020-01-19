@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\CustomApp\\nodejs\\node.exe',
+1 verbose cli   'D:\\CustomApp\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\КПІ\\4 Курс\\Семестер 2\\Інтернет\\КарпенкоЕЮ\\Лабораторная1',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Leonid\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle kursenko_lr01@1.0.2~prepublish: kursenko_lr01@1.0.2
+11 silly lifecycle kursenko_lr01@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Leonid\\AppData\\Roaming\\npm-cache\\kursenko_lr01\\1.0.2\\package.tgz',
+12 verbose tar pack   'D:\\КПІ\\4 Курс\\Семестер 2\\Інтернет\\КарпенкоЕЮ\\Лабораторная1' ]
+13 verbose tarball C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package.tgz
+14 verbose folder D:\КПІ\4 Курс\Семестер 2\Інтернет\КарпенкоЕЮ\Лабораторная1
+15 verbose addLocalTarball adding from inside cache C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package.tgz
+16 verbose correctMkdir C:\Users\Leonid\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd kursenko_lr01@1.0.2
+18 verbose afterAdd C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Leonid\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package\package.json written
+21 silly publish { name: 'kursenko_lr01',
+21 silly publish   version: '1.0.2',
+21 silly publish   description: '-',
+21 silly publish   main: 'lab1.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'Kursenko' },
+21 silly publish   license: 'ISC',
+21 silly publish   readme: '1. Выполните задания согласно своему варианту, исользую "чистый" JavaScript без применения сторонних фреймворков.\r\nОценивается краткость и правильность кода. Приветствуется использование элементов ES-6 (косые кавычки, стрелки функции, ...)\r\n\r\n2. Создайте класс Lab1 (в стиле ES-6) и создайте в нем 2 метода реализующие функции вашего задания (task1 и task2)\r\n\r\n3. npm\r\nnpm init\r\nnpm publish\r\n\r\n\t\t\t\t\t\t\t------ Вариант 1 ------\r\nЗадание 1\r\nИзограмма - это слово, которое не имеет повторяющихся букв, последовательных или не последовательных. Реализуйте функцию, которая определяет, является ли строка, содержащая только буквы, изограммой. Предположить, что пустая строка является изограммой. Игнорировать регистр букв.\r\nПримеры работы функции\r\n// isIsogram( "Dermatoglyphics" ) == true\r\n// isIsogram( "aba" ) == false\r\n// isIsogram( "moOse" ) == false\r\n\r\nЗадание 2\r\nНапишите функцию, которая принимает положительное целое число и возвращает меньшее положительное целое число, содержащее одни и те же цифры.\r\nПримеры работы функции\r\n// nextSmaller(21) == 12\r\n// nextSmaller(531) == 513\r\n// nextSmaller(20715) == 20571\r\nФункция возвращает -1 если такое число не существует, или оно с ведущим нулем\r\n// nextSmaller(9) == -1\r\n// nextSmaller(111) == -1\r\n// nextSmaller(135) == -1\r\n// nextSmaller(1027) == -1 0721 число с ведущим нулем\r\n\r\n\r\n\t\t\t\t\t\t\t------ Вариант 2 ------\r\nЗадание 1\r\nРеализуйте функцию разности, которая вычитает один массив из другого. Она должна удалить все значения из массива a, которые присутствуют в массиве b.\r\nПримеры работы функции:\r\n// array_diff([1,2],[1]) == [2]\r\n// array_diff([1,2,2,2,3],[2]) == [1,3]\r\n\r\nЗадание 2\r\nВаша задача написать функцию, которая форматирует продолжительность, заданную в виде нескольких секунд, в удобную для человека форму. Функция должна принимать неотрицательное целое число. Если оно равно нулю, функция возвращает «now». В противном случае продолжительность выражается в виде комбинации\r\nyear(s), day(s), hour(s), minute(s) and second(s). Обратите внимание на множественное число\r\nПримеры работы функции:\r\n// formatDuration(0)    // "now"\r\n// formatDuration(1)    // "1 second"\r\n// formatDuration(62)    // "1 minute and 2 seconds"\r\n// formatDuration(3662)  // "1 hour, 1 minute and 2 seconds"\r\n// formatDuration(78000) // "21 hours and 40 minutes"\r\n\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t------ Вариант 3 ------\r\nЗадание 1\r\nЦелью этого задания является написать функцию  преобразования строки в новую строку, где каждый символ в новой строке равен \'(\', если этот символ появляется только один раз в исходной строке, или \')\' если этот символ появляется более одного раза в исходной строке. Игнорировать заглавные буквы при определении того, является ли символ дублирующимся.\r\nПримеры преобразований:\r\n// "din" => "((("\r\n// "recede" => "()()()"\r\n// "Success" => ")())())"\r\n// "(( @" => "))(("\r\n\r\nЗадание 2\r\nSudoku - игра, играемая на сетке 9x9. Цель игры - заполнить все ячейки сетки цифрами от 1 до 9, так чтобы каждый столбец, каждая строка и каждая из девяти субсетей 3x3 (также называемых блоками) содержали все цифры от 1 до 9.\r\nНапишите функцию validSolution, которая принимает 2D-массив, представляющий плату судоку, и возвращает true, если это действительное решение, или false в противном случае.\r\nПример работы функции:\r\n// validSolution([\r\n//   [5, 3, 4, 6, 7, 8, 9, 1, 2],\r\n//   [6, 7, 2, 1, 9, 5, 3, 4, 8],\r\n//   [1, 9, 8, 3, 4, 2, 5, 6, 7],\r\n//   [8, 5, 9, 7, 6, 1, 4, 2, 3],\r\n//   [4, 2, 6, 8, 5, 3, 7, 9, 1],\r\n//   [7, 1, 3, 9, 2, 4, 8, 5, 6],\r\n//   [9, 6, 1, 5, 3, 7, 2, 8, 4],\r\n//   [2, 8, 7, 4, 1, 9, 6, 3, 5],\r\n//   [3, 4, 5, 2, 8, 6, 1, 7, 9]\r\n// ]); // => true\r\n\r\n\r\n\t\t\t\t\t\t\t------ Вариант 4 ------\r\nЗадание 1\r\nРеализуйте функцию unique_in_order, которая принимает в качестве аргумента последовательность (строка или массив) и возвращает массив элементов без каких-либо элементов с одинаковым значением рядом друг с другом и сохраняя исходный порядок элементов.\r\nПримеры работы функции:\r\n// uniqueInOrder(\'AAAABBBCCDAABBB\') == [\'A\', \'B\', \'C\', \'D\', \'A\', \'B\']\r\n// uniqueInOrder(\'ABBCcAD\')         == [\'A\', \'B\', \'C\', \'c\', \'A\', \'D\']\r\n// uniqueInOrder([1,2,2,3,3])       == [1,2,3]\r\n\r\nЗадание 2\r\nДля положительного числа n> 1 находимо провести разложение на простые множители.\r\nРезультатом будет строка со следующей формой:\r\n"p1^n1*p2^n2* ... *pk^nk"\r\nгде p(i) в порядке возрастания и n(i) пусты, если n(i) равно 1.\r\nПример преобразования:\r\nn = 86240 => "(2^5)*5*(7^2)*11"',
+21 silly publish   readmeFilename: 'readme.txt',
+21 silly publish   _id: 'kursenko_lr01@1.0.2',
+21 silly publish   _shasum: '0422331b9f8caa025c3d1fd2cf97315fd47e477d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name kursenko_lr01
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'kursenko_lr01',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'kursenko_lr01',
+26 silly mapToRegistry   name: 'kursenko_lr01',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/kursenko_lr01
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Leonid\AppData\Roaming\npm-cache\kursenko_lr01\1.0.2\package.tgz
+30 verbose request uri https://registry.npmjs.org/kursenko_lr01
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 23:59:17
+33 verbose request using bearer token for auth
+34 verbose request id f59cc6319ce65264
+35 http request PUT https://registry.npmjs.org/kursenko_lr01
+36 http 403 https://registry.npmjs.org/kursenko_lr01
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '93',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 15 Mar 2018 21:59:17 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hhn1539-HHN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1521151156.333395,VS0,VE896',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating C:\Users\Leonid\AppData\Roaming\npm-cache\registry.npmjs.org\kursenko_lr01 on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published versions: 1.0.2. : kursenko_lr01
+40 verbose stack     at makeError (D:\CustomApp\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (D:\CustomApp\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (D:\CustomApp\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (D:\CustomApp\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (D:\CustomApp\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (D:\CustomApp\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid kursenko_lr01
+43 verbose cwd D:\КПІ\4 Курс\Семестер 2\Інтернет\КарпенкоЕЮ\Лабораторная1
+44 error Windows_NT 10.0.14393
+45 error argv "D:\\CustomApp\\nodejs\\node.exe" "D:\\CustomApp\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.11.3
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published versions: 1.0.2. : kursenko_lr01
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
